@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Cinema Ticket System</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="screen" id="screen"></div>
+    <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+    <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+    <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+    <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+    <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+</div>
+
+<div class="movie-list">
+    <select id="movie">
+        <option disabled>Select Film</option>
+        <option value="20">The Godfather (1972)</option>
+        <option value="30">Titanic (1997)</option>
+        <option value="25">Inception (2010)</option>
+        <option value="40">The Shawshank Redemption (1994)</option>
+        <option value="50">Star Wars: Episode IV - A New Hope (1977)</option>
+    </select>
+</div>
+
+<ul class="info">
+    <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+    </li>
+    <li>
+        <div class="seat"></div>
+        <small>Empty</small>
+    </li>
+    <li>
+        <div class="seat reserved"></div>
+        <small>Full</small>
+    </li>
+</ul>
+
+<p class="text">
+    <span id="count">0</span> seats selected, calculated fee: <span id="amount">0₺</span>
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
