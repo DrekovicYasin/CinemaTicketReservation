@@ -12,9 +12,9 @@ body {
 
 /* Arka plan görüntüsü */
 .background {
-    width: 200%; /* Genişlik */
-    height: 200%; /* Yükseklik */
-    background: url('assets/screen.jpg') no-repeat center center; /* Arka plan görüntüsü */
+    width: 100%; /* Genişlik */
+    height: 100%; /* Yükseklik */
+    background: url('assets/screen.png') no-repeat center center; /* Arka plan görüntüsü */
     background-size: auto; /* Görüntü boyutu ayarı */
     position: absolute; /* Mutlak pozisyon */
     top: 0;
@@ -124,5 +124,6 @@ body {
 
 /* Metin stilleri */
 p.text span {
-    color: black; /* Metin rengi */
+    color: #f6eb6f; /* Metin rengi */
+    font-weight: bold;
 }
