@@ -10,13 +10,15 @@
 </head>
 <body>
 
+<div class="background"></div> <!-- Arka plan görüntüsü -->
+
 <div class="container">
-    <div class="screen" id="screen"></div>
+    <div class="screen" id="screen"></div> <!-- Film ekranı -->
     <div class="row">
+        <div class="seat"></div> <!-- Koltuk -->
         <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat reserved"></div>
-        <div class="seat reserved"></div>
+        <div class="seat reserved"></div> <!-- Rezerve edilmiş koltuk -->
+        <div class="seat reserved"></div> <!-- Rezerve edilmiş koltuk -->
         <div class="seat"></div>
         <div class="seat"></div>
         <div class="seat"></div>
@@ -77,21 +79,21 @@
 
 <ul class="info">
     <li>
-        <div class="seat selected"></div>
-        <small>Selected</small>
+        <div class="seat selected"></div> <!-- Seçili koltuk durumu -->
+        <small>Selected</small> <!-- Yazı açıklaması -->
     </li>
     <li>
-        <div class="seat"></div>
-        <small>Empty</small>
+        <div class="seat"></div> <!-- Boş koltuk durumu -->
+        <small>Empty</small> <!-- Yazı açıklaması -->
     </li>
     <li>
-        <div class="seat reserved"></div>
+        <div class="seat reserved"></div> <!-- Rezerve edilmiş koltuk durumu -->
         <small>Full</small>
     </li>
 </ul>
 
 <p class="text">
-    <span id="count">0</span> seats selected, calculated fee: <span id="amount">0₺</span>
+    <span id="count">0</span> seats selected, calculated fee: <span id="amount">0₺</span> <!-- Seçilen koltuk ve toplam ücret -->
 </p>
 
 <script src="script.js"></script>

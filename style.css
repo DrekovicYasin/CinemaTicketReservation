@@ -1,48 +1,71 @@
+/* Genel sayfa stillemesi */
 body {
-    background-color: #292929;
+    background-color: #292929; /* Arka plan rengi */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; /* Ekranın tamamını kaplama */
     margin: 0;
-    color: #fff;
+    color: #fff; /* Metin rengi */
 }
 
+/* Arka plan görüntüsü */
+.background {
+    width: 200%; /* Genişlik */
+    height: 200%; /* Yükseklik */
+    background: url('assets/screen.jpg') no-repeat center center; /* Arka plan görüntüsü */
+    background-size: auto; /* Görüntü boyutu ayarı */
+    position: absolute; /* Mutlak pozisyon */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Arka planda kalmasını sağlar */
+    transition: transform 0.1s ease-out; /* Hareketin daha yavaş ve yumuşak olması */
+}
 
+/* Ana içerik konteynerı */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative; /* Diğer elementlerin üstünde olması */
+    z-index: 1; /* Ön planda kalması */
 }
 
+/* Koltuklar */
 .seat {
-    background-color: #444451;
+    background-color: #444451; /* Koltuk rengi */
     height: 15px;
     width: 15px;
     margin: 3px;
     border-radius: 5px;
+    border: 1px solid whitesmoke; /* Kenarlık rengi */
 }
 
+/* Rezerve edilmemiş koltuk hover efekti */
 .seat:not(.reserved):hover {
     cursor: pointer;
-    transform: scale(1.3);
-    background-color: #f6eb6f;
+    transform: scale(1.3); /* Büyüme efekti */
+    background-color: #f6eb6f; /* Arka plan rengi */
 }
 
+/* Koltuk sıraları */
 .row {
     display: flex;
 }
 
+/* Seçili koltuklar */
 .seat.selected {
-    background-color: #f6eb6f;
+    background-color: #f6eb6f; /* Seçili koltuk rengi */
 }
 
+/* Rezerve edilmiş koltuklar */
 .seat.reserved {
-    background-color: #fff;
+    background-color: #fff; /* Rezerve edilmiş koltuk rengi */
 }
 
+/* Koltuk sıralarındaki boşluk ayarları */
 .seat:nth-of-type(2) {
     margin-right: 20px;
 }
@@ -51,50 +74,55 @@ body {
     margin-right: 20px;
 }
 
+/* Film ekranı */
 .screen {
-    background-color: #fff;
-    height: 50px;
-    width: 100%;
-    margin: 20px 0;
-    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
-    color: #000;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
+    background-color: #fff; /* Arka plan rengi */
+    height: 50px; /* Yükseklik */
+    width: 100%; /* Genişlik */
+    margin: 20px 0; /* Dış boşluk */
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.7); /* Kutu gölgesi */
+    border-radius: 5px; /* Köşe yuvarlama */
+    color: #000; /* Metin rengi */
+    padding: 10px; /* İç boşluk */
+    text-align: center; /* Metin hizalama */
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: glowing 3s infinite; /* Yanarlı dönerli animasyon */
 }
 
+/* Film seçim listesi */
 .movie-list {
-    margin: 20px 0;
+    margin: 20px 0; /* Dış boşluk */
 }
 
+/* Bilgi paneli */
 .info {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    color: #777;
+    background-color: rgba(0, 0, 0, 0.2); /* Arka plan rengi */
+    padding: 5px 10px; /* İç boşluk */
+    color: #ffffff; /* Metin rengi */
     display: flex;
-    justify-content: space-around; /* Updated */
-    border-radius: 5px;
+    justify-content: space-around; /* Aralık ayarı */
+    border-radius: 5px; /* Köşe yuvarlama */
 }
 
 .info li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px;
+    margin: 0 10px; /* Dış boşluk */
 }
 
 .info li .seat {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Dış boşluk */
 }
 
 .info li span {
     display: block;
-    color: #fff;
+    color: #fff; /* Metin rengi */
 }
 
+/* Metin stilleri */
 p.text span {
-    color: #f6eb6f;
+    color: black; /* Metin rengi */
 }
