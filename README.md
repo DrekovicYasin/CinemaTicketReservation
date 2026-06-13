@@ -1,1 +1,22 @@
-<img width="1710" alt="image" src="https://github.com/DrekovicYasin/CinemaTicketReservation/assets/106954743/2d948f6a-f588-40b1-86fb-8ba53ac9c40a">
+# Cinema Ticket Reservation
+
+JavaScript sinema bileti rezervasyon uygulaması.
+
+## Features
+
+- Film seçimi ve seans görüntüleme
+- Koltuk rezervasyonu
+- Bilet özeti
+
+## Run
+
+Projeyi tarayıcıda aç veya bir local server kullan:
+
+```bash
+# VS Code Live Server veya:
+npx serve .
+```
+
+---
+
+[Yasin Gülsuyu](https://github.com/DrekovicYasin) · Portfolio project
